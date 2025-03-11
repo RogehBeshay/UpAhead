@@ -2,8 +2,9 @@ import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
+
 const firebaseConfig = {
-    apiKey: "AIzaSyByR94It78Ogsmn9k5lNER28HjS3keUQX8",
+    apiKey: process.env.REACT_APP_FIREBASE_KEY,
     authDomain: "upahead-b5f45.firebaseapp.com",
     projectId: "upahead-b5f45",
     storageBucket: "upahead-b5f45.firebasestorage.app",
